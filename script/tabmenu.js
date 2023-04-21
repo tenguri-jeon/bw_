@@ -7,7 +7,7 @@ function tabmenu(params) {
         $tabBtn[0].classList.add('active');
         $tabBtn[1].classList.remove('active');
         $tabContent[0].classList.add('active')
-    $tabContent[1].classList.remove('active')
+        $tabContent[1].classList.remove('active')
     })
 
     $tabBtn[1].addEventListener('click',()=>{

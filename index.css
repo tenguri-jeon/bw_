@@ -440,11 +440,10 @@
 .query-adjust-list-tbody{
     float: left;
     width: 970px;
-    /* height: 331px; */
     overflow-y: scroll;
     overflow-x: hidden;
     box-shadow: inset 0px 2px 9px 1px #423e5a;
-    max-height: 400px;
+    max-height: 360px;
     overflow-y: scroll;
 }
 
@@ -470,6 +469,7 @@
     background-color: var(--table-first-back);
     color: var(--table-blue);
     border-radius: 2px;
+    height: 38px;
 }
 
 .query-adjust-list-tbody tr:nth-child(even){
@@ -477,6 +477,7 @@
     color: var(--table-blue);
     border-radius: 2px;
 }
+
 
 .dropdown-button{
     width: 24px;
@@ -550,11 +551,12 @@ th {
   opacity: 100%;
 }  
 
+
 .submenu-wrap{
-    margin: 8px auto;
     width: 940px;
     height: 228px;
     overflow: hidden;
+    transition: 0.5s;
 }
 
 .table-head-wrap{
@@ -616,7 +618,11 @@ th {
 }
 
 .display{
-    display: none;
+    transform: translateY(-100%);
+    visibility: hidden;
+    overflow: hidden;
+    height: 100%;
+    visibility: collapse;
 }
 
 .query-detail{
