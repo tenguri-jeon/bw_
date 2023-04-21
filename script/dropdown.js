@@ -2,6 +2,7 @@
 // function button(params) {  
     const $dropdownButton = document.getElementsByClassName('dropdown-button');
     const $submenuWrap = document.getElementsByClassName('submenu-wrap');
+    const $queryAdjustListtbody = document.getElementsByClassName('query-adjust-list-tbody')
     
     for (let i = 0; i < $dropdownButton.length; i++) {
         
