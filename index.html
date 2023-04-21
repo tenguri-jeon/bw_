@@ -1,0 +1,653 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <link rel="stylesheet" href="reset.css">
+    <link rel="stylesheet" href="index.css">
+
+
+</head>
+<body>
+    <section class="notice-container">
+        <!-- modal -->
+        <div class="modal">
+            <div class="modal-content">
+                <!-- modal head -->
+                <div class="modal-header">
+                    <div class="notice-wrap">
+                        <figure class="notice-ico">
+                            <img src="img/notice-button.png" alt="공지사항 버튼">
+                        </figure>
+                        <h4 class="modal-title">공지사항</h4>
+                        <div class="dropdown-wrap">
+                            <button id="dropdown-button">/notice/selectList.do (63%) <div class="dropdown-down"></div> </button>
+                            <ul class="dropdown-menu">
+                              <li class="stripe-1"><a href="#">/notice/selectList.do (63%)</a></li>
+                              <li class="stripe-2"><a href="#">/notice/selectList.do (63%)</a></li>
+                              <li class="stripe-3"><a href="#">/notice/selectList.do (63%)</a></li>
+                              <li class="stripe-4"><a href="#">/notice/selectList.do (63%)</a></li>
+                            </ul>                     
+                        </div>
+                    </div>
+                    <div class="close">
+                        <div class="close-arrow">
+                        </div>
+                    </div>
+                </div>
+            <!-- modal head// -->
+            <!-- modal body -->
+            <div class="modal-body">
+                <!-- modal container1 -->
+                <div class="modal-container">
+                    <div class="modal-background">
+                        <div class="modal-body-head">
+                        <p class="modal-head-text">
+                                서비스 알림
+                            </p>
+                        </div>
+                        <div class="service-wrap">
+                            <div class="modal-body-contents-wrapper">
+                                <div class="contents">
+                                    <div class="content"> 
+                                        <div class="notice-background">
+                                            <div class="notice-text-wrap">
+                                                <div class="red-icon"></div>
+                                                <p>응답시간</p>
+                                            </div>
+                                        </div>
+                                        <span class="respond respond-time">
+                                             평균 1s 보다 2.3s 
+                                             <span class="red-text">지연</span>
+                                        </span>
+                                    </div>
+                                </div>
+                                <div class="contents">
+                                    <div class="content"> 
+                                        <div class="notice-background">
+                                            <div class="notice-text-wrap">
+                                                <div class="blue-icon"></div>
+                                                <p>접속지수</p>
+                                            </div>
+                                        </div>
+                                        <span class="respond connection-binder">
+                                            평균 220건 보다 1.1배 증가
+                                        </span>
+                                    </div>
+                                </div>
+                                <div class="contents">
+                                    <div class="content"> 
+                                        <div class="notice-background">
+                                            <div class="notice-text-wrap">
+                                                <div class="blue-icon"></div>
+                                                <p>호출건수</p>
+                                            </div>
+                                        </div>
+                                        <span class="respond summons">
+                                            평균 665건 보다 1.2배 증가
+                                        </span>
+                                    </div>
+                                </div>
+                                <div class="contents">
+                                    <div class="content"> 
+                                        <div class="notice-background">
+                                            <div class="notice-text-wrap">
+                                                <div class="red-icon"></div>
+                                                <p>쿼리 응답시간</p>
+                                            </div>
+                                        </div>
+                                        <span class="respond queryrespond-time">
+                                            평균 1s 보다 1.0s 
+                                            <span class="red-text">지연</span>
+                                        </span>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="diamond-chart-wrap">
+                                <figure class="diamond-chart">
+                                    <img src="img/diamond-chart.PNG" alt="차트">
+                                </figure>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <!-- modal container1 // -->
+
+               <!-- modal container2 -->
+                <div class="modal-container">
+                    <div class="modal-background">
+                        <div class="modal-body-head">
+                            <p class="modal-head-text">
+                                호출건수 / 응답시간 (사용자 호출기반)
+                            </span>
+                        </div>
+                        <div class="chart-contents click-chart">
+                            <figure>
+                                <img src="img/chart2.PNG" alt="차트">
+                            </figure>
+                        </div>
+                    </div>
+                </div>
+                <!-- modal container2 // -->
+
+               <!-- modal container3 -->
+                <div class="modal-container">
+                    <div class="modal-background">
+                        <div class="modal-body-head">
+                            <p class="modal-head-text">
+                                자원 사용 / 응답시간(시스템기반)
+                            </span>
+                        </div>
+                        <div class="chart-contents">
+                            <figure>
+                                <img src="img/chart3.PNG" alt="차트">
+                            </figure>
+                        </div>
+                    </div>
+                </div>
+                <!-- modal container3 // -->
+
+               <!-- modal container4 -->
+                <div class="modal-container">
+                    <div class="modal-background">
+                        <div class="modal-body-head">
+                            <p class="modal-head-text">
+                                SQL 리스트 / 응답시간
+                            </span>
+                        </div>
+                        <div class="chart-contents">
+                            <figure>
+                                <img src="img/chart4.PNG" alt="차트">
+                            </figure>
+                        </div>
+                    </div>
+                </div>
+                <!-- modal container4 // -->
+
+               <!-- modal container5 -->
+                <div class="modal-container">
+                    <div class="modal-query-background query-adjust-list-background">
+                        <div class="modal-body-head">
+                            <p class="modal-head-text">
+                               쿼리 수정목록
+                            </p>
+                        </div>
+                        <div class="adjust-list">
+                            <table class="query-adjust-list-table">
+                                <caption class="hidden"> 쿼리 수정목록 </caption>
+                                <!-- <colgroup>
+                                    <col width="10%">
+                                    <col width="10%">
+                                    <col width="">
+                                    <col width="10%">
+                                    <col width="15%">
+                                    <col width="15%">
+                                </colgroup> -->
+                                <thead class="query-adjust-list-thead">
+                                    <tr>
+                                        <th style="width: 5%"></th>
+                                        <th style="width: 5%"><span> 대상</span></th>
+                                        <th ><span> Query</span></th>
+                                        <th style="width: 15%"><span> 최근수행시간</span></th>
+                                        <th style="width: 20%"><span> 수횅평균시간</span></th>
+                                        <th style="width: 20%"><span> 진행상태</span></th>
+                                     </tr>
+                                </thead>
+                                <!-- table 내용 -->
+                                <tbody class="query-adjust-list-tbody" >
+                                    <tr>
+                                        <td class="text-center" style="width:  5%;"><div class="dropdown-button dropdown-button1 dropdown-icon-down"></div></td>
+                                        <td class="text-center" style="width: 5%; "> <span class="blue target"> A</span> </td>
+                                        <td> <span class="query">SELECT*FROM TN_BBSWHERE BBS_A?...</span></td>
+                                        <td class="text-center" style="width: 15%; "><span class="speed">1.03ms</span></td>
+                                        <td class="text-center" style="width: 20%; "><span class="average-time">1.55ms ( <div class="updown-icon up-icon"></div>+0.32ms )</span></td>
+                                        <td class="text-center" style="width: 20%; "><span class="condition">진행완료</span></td>
+                                    </tr>
+
+                                        <div class="submenu-wrap drop-menu3 display">
+                                            <div class="tab-menu">
+                                                <div class="tab-header">
+                                                    <button class="tab-btn active">상세정보</button>
+                                                    <button class="tab-btn">Table Row 영향도</button>                                                       
+                                                </div>
+                                                <div class="tab-display">
+                                                <ul class="tab-wrap">
+                                                    <li class="tab-content active">
+                                                        <div class="table-head">
+                                                            <ul class="table-head-wrap">
+                                                                <li class="text-center detail-query-title"><span>Query 상세보기</span> </li>
+                                                                <li class="text-center detail-text-wrap">
+                                                                    <span>바인딩 컬럼</span>
+                                                                    <span>파라미터</span>
+                                                                    <span>타입</span>
+                                                                </li>
+                                                            </ul>
+                                                        </div>
+                                                        <div class="table-body">
+                                                            <div class="table-body-content">
+                                                                <div class="detail-query text-center">
+                                                                    <span>
+                                                                        SELECT* <br>
+                                                                        FROMTN_BBS <br>
+                                                                        WHERE BBS_A=?BBS_F=? <br>
+                                                                        SELECT* <br>
+                                                                        FROMTN_BBS <br>
+                                                                        WHERE BBS_A=?BBS_F=? <br>
+                                                                        SELECT* <br>
+                                                                        FROMTN_BBS <br>
+                                                                        WHERE BBS_A=?BBS_F=? <br>
+                                                                    </span>
+                                                                </div>
+                                                                <div class="table-body-contents-wrap">
+                                                                    <div class="table-contents">
+                                                                        <div class="text-center">
+                                                                            <span>BBS_A</span>
+                                                                        </div>
+                                                                        <div class="text-center">
+                                                                            <span>2314</span>
+                                                                        </div>
+                                                                        <div class="text-center">
+                                                                            <span>int</span>
+                                                                        </div>
+                                                                    </div>
+                                                                    <div class="table-contents">
+                                                                        <div class="text-center">
+                                                                            <span>BBS_A</span>
+                                                                        </div>
+                                                                        <div class="text-center">
+                                                                            <span>2314</span>
+                                                                        </div>
+                                                                        <div class="text-center">
+                                                                            <span>int</span>
+                                                                        </div>
+                                                                    </div>
+                                                                </div>
+                                                            </ul>
+                                                        </div>
+                                                    </li>
+                                                </ul>
+                                            </div>
+                                        </div>
+
+                                    <tr>
+                                        <td class="text-center" style="width: 5%"><div class="dropdown-button dropdown-button1 dropdown-icon-down"></div></td>
+                                        <td class="text-center" style="width: 5%"> <span class="blue target"> A</span> </td>
+                                        <td> <span class="query">SELECT*FROM TN_BBSWHERE BBS_A?...</span></td>
+                                        <td class="text-center" style="width: 15%"><span class="speed">1.03ms</span></td>
+                                        <td class="text-center" style="width: 20%"><span class="average-time">1.55ms ( <div class="updown-icon up-icon"></div>+0.32ms )</span></td>
+                                        <td class="text-center" style="width: 20%"><span clas stlye="width: 15%"s="condition">진행완료</span></td>
+                                    </tr>
+                                    <tr>
+                                        <td class="text-center" style="width: 5%"><div class="dropdown-button dropdown-button2 dropdown-icon-down"></div></td>
+                                        <td class="text-center" style="width: 5%"> <span class="green target"> B</span> </td>
+                                        <td> <span class="query">SELECT*FROM TN_BBSWHERE BBS_A?...</span></td>
+                                        <td class="text-center" style="width: 15%"><span class="speed">0.51ms</span></td>
+                                        <td class="text-center" stlye="width: 20%"><span class="average-time">0.41ms ( <div class="updown-icon down-icon"></div>-0.11ms )</span></td>
+                                        <td class="text-center" style="width: 20%"><span class="condition">진행완료</span></td>
+                                    </tr>
+                                    <tr>
+                                        <td class="text-center" style="width : 5%"><div class="dropdown-button dropdown-button3 dropdown-icon-down"></div></td>
+                                        <td class="text-center" style="width : 5%"> <span class="orange target"> C</span> </td>
+                                        <td> <span class="query">SELECT*FROM TN_BBSWHERE BBS_A?...</span></td>
+                                        <td class="text-center" style="width: 15%"><span class="speed red-text">11.03ms</span></td>
+                                        <td class="text-center" style="width: 20%"><span class="average-time">10.02ms ( <div class="updown-icon down-icon"></div>-1.01ms )</span></td>
+                                        <td class="text-center" style="width: 20%"><span class="condition red-text">진행중</span></td>
+                                    </tr>
+                                    <tr>
+                                        <td class="text-center" style="width: 5%;"><div class="dropdown-button dropdown-button4 dropdown-icon-down"></div></td>
+                                        <td class="text-center" style="width: 5%;"> <span class="yello target"> D</span> </td>
+                                        <td> <span class="query">SELECT*FROM TN_BBSWHERE BBS_A?...</span></td>
+                                        <td class="text-center" style="width : 15%"><span class="speed red-text">0.00ms</span></td>
+                                        <td class="text-center" style="width : 20%"><span class="average-time">15.03ms ( <div class="updown-icon up-icon"></div>+1.01ms )</span></td>
+                                        <td class="text-center" style="width : 20%"><span class="condition red-text">진행중</span></td>
+                                    </tr>
+                                </tbody>
+                                 <!-- table 내용// -->
+                            </table>
+                            <!-- tab메뉴 -->
+                                    <!-- tab-menu 상세보기 -->
+                                        <!-- <li class="tab-content active">
+                                            <table>
+                                                <colgroup>
+                                                <col width="50%">
+                                                <col width="">
+                                                <col width="">
+                                                <col width="">
+                                                </colgroup>
+                                                <thead>
+                                                    <tr>
+                                                        <th class="text-center">Query 상세보기</th>
+                                                        <th class="text-center">바인딩컬럼</th>
+                                                        <th class="text-center">파라미터</th>
+                                                        <th class="text-center">타입</th>
+                                                    </tr>
+                                                </thead>
+                                                <tbody>
+                                                    <tr>
+                                                        <td rowspan="4" class="query-detail"> 
+                                                            <div class="query-scroll">
+                                                                <span>
+                                                                    SELECT* <br>
+                                                                    FROMTN_BBS <br>
+                                                                    WHERE BBS_A=?BBS_F=? <br>
+                                                                    SELECT* <br>
+                                                                    FROMTN_BBS <br>
+                                                                    WHERE BBS_A=?BBS_F=? <br>
+                                                                    SELECT* <br>
+                                                                    FROMTN_BBS <br>
+                                                                    WHERE BBS_A=?BBS_F=? <br>
+                                                                </span>
+                                                            </div>
+                                                        </td>
+                                                        <td class="text-center"> <span>BBS_A</span> </td>
+                                                        <td class="text-center"> <span>2314</span> </td>
+                                                        <td class="text-center"> <span>int</span> </td>
+                                                    </tr>
+                                                    <tr>
+                                                        <td class="text-center"> <span>BBS_F</span> </td>
+                                                        <td class="text-center"> <span>bbs</span> </td>
+                                                        <td class="text-center"> <span>String</span> </td>
+                                                    </tr>
+                                                    <tr>
+                                                        <td class="text-center"></td>
+                                                        <td class="text-center"></td>
+                                                        <td class="text-center"></td>
+                                                    </tr>
+                                                    <tr>
+                                                        <td class="text-center"></td>
+                                                        <td class="text-center"></td>
+                                                        <td class="text-center"></td>
+                                                    </tr>
+                                                </tbody>
+                                            </table>
+                                        </li> -->
+
+                                        <!-- //tab-menu 상세보기 -->
+                                        <!-- tab menu table row 영향도 -->
+                                        <!-- <li class="tab-content">
+                                            <table>
+                                                <colgroup>
+                                                <col width="50%">
+                                                <col width="">
+                                                <col width="">
+                                                <col width="">
+                                                </colgroup>
+                                                <thead>
+                                                    <tr>
+                                                        <th class="text-center"></th>
+                                                        <th class="text-center"></th>
+                                                        <th class="text-center"></th>
+                                                        <th class="text-center"></th>
+                                                    </tr>
+                                                </thead>
+                                                <tbody>
+                                                    <tr>
+                                                        <td rowspan="4" class="query-detail"> 
+                                                        </td>
+                                                        <td class="text-center"> <span></span> </td>
+                                                        <td class="text-center"> <span></span> </td>
+                                                        <td class="text-center"> <span></span> </td>
+                                                    </tr>
+                                                    <tr>
+                                                        <td class="text-center"> <span></span> </td>
+                                                        <td class="text-center"> <span></span> </td>
+                                                        <td class="text-center"> <span></span> </td>
+                                                    </tr>
+                                                    <tr>
+                                                        <td></td>
+                                                        <td></td>
+                                                        <td></td>
+                                                    </tr>
+                                                    <tr>
+                                                        <td></td>
+                                                        <td></td>
+                                                        <td></td>
+                                                    </tr>
+                                                    
+                                                </tbody>
+                                            </table>
+                                        </li>
+                                    </ul> -->
+                                    </div>
+                                    <!-- //tab menu table row 영향도 -->
+                                </div>
+                            </div>
+                            <!-- //tab 메뉴 -->
+                        </div>
+                    </div>
+                </div>
+                <!-- modal container5 // -->
+
+               <!-- modal container6 -->
+                <div class="modal-container">
+                    <div class="modal-background">
+                        <div class="modal-body-head">
+                            <p class="modal-head-text">
+                                커넥션 풀 상태
+                            </span>
+                        </div>
+                        <div class="connection-wrap">
+                            <div class="chart-contents connection-full">
+                                <figure>
+                                    <img src="img/chart5.PNG" alt="차트">
+                                </figure>
+                                <div class="connection-table-wrap">
+                                    <table>
+                                        <colgroup>
+                                        <col width="50%" >
+                                        <col width="">
+                                        </colgroup>
+                                        <thead></thead>
+                                        <tbody>
+                                            <tr>
+                                                <th>시간</th>
+                                                <th>2022-10-05 11:28:32(클릭지점)</th>
+                                            </tr>
+                                            <tr>
+                                                <th>JDBC POOL</th>
+                                                <th>Conn app</th>
+                                            </tr>
+                                            <tr>
+                                                <th>IDLE 커넥션 수</th>
+                                                <th>0</th>
+                                            </tr>
+                                            <tr>
+                                                <th>전체 커넥션 수</th>
+                                                <th>50</th>
+                                            </tr>
+                                            <tr>
+                                                <th>활성화 커넥션 수</th>
+                                                <th>50</th>
+                                            </tr>
+                                            <tr>
+                                                <th>상태</th>
+                                                <th>대기</th>
+                                            </tr>
+                                        </tbody>
+                                    </table>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div> 
+                <!-- modal container6 // -->
+
+           </div>
+                <!-- modal body// -->
+          </div>
+        </div>
+      </div>
+      <!-- modal// -->
+    </section>
+
+    <section class="invoke-container">
+        <!-- modal -->
+        <div class="invoke-modal display">
+            <div class="invoke-modal-content">
+                <!-- modal head -->
+                <div class="invoke-modal-header">
+                    <div class="notice-wrap">
+                        <div class="invoke-tittle-wrap">
+                            <h5 class="modal-title">호출건수 / 응답시간 (사용자 호출기반)</h4>
+                            <span>2022.10.04 17:43</span>
+                        </div>
+                        <div class="close">
+                            <div class="close-arrow">
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="invoke-modal-body">
+                    <div class="invoke-img-wrap">
+                        <figure>
+                            <img src="img/invoke-chart1.PNG" alt="차트 그래프 이미지">
+                        </figure>
+                    </div>
+                    <div class="invoke-table-wrap">
+                        <table class="invoke-chart">
+                            <colgroup>
+                            <col width="33%">
+                            <col width="33%">
+                            <col width="33%">
+                            </colgroup>
+                            <thead>
+                                <tr>
+                                    <th ></th>
+                                    <th class="text-center"> <span> 현재</span></th>
+                                    <th class="text-center"> <span> 평균 (일)</span></th>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <td class="text-left"> <span class="ml-16"> 응답시간</span></td>
+                                    <td class="text-center"> <span> 14ms</span></td>
+                                    <td class="text-center"> <span> 12ms</span></td>
+                                </tr>
+                                <tr>
+                                    <td class="text-left"> <span class="ml-16"> 호출건수</span></td>
+                                    <td class="text-center"> <span> 1500건</span></td>
+                                    <td class="text-center"> <span> 1000건</span></td>
+                                </tr>                               
+                                    <td class="text-left"> <span class="ml-16"> 사용자 수</span></td>
+                                    <td class="text-center"> <span> 1400명</span></td>
+                                    <td class="text-center"> <span> 950명</span></td>
+                                </tr>                               
+                                    <td class="text-left"> <span class="ml-16"> 1인 호출건수</span></td>
+                                    <td class="text-center"> <span> 1.03</span></td>
+                                    <td class="text-center"> <span> 1.05</span></td>
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div>
+                    <div class="invoke-table-wrap">
+                        <table class="invoke-chart">
+                            <caption class="text-left">호출건수 / 사용자수</caption>
+                            <colgroup>
+                            <col width="%">
+                            <col width="%">
+                            <col width="%">
+                            <col width="15%">
+                            <col width="15%">
+                            </colgroup>
+
+                            <thead>
+                                <tr>
+                                    <th><span> IP대역</span></th>
+                                    <th><span> 접근 횟수 (퍼센트</span>)</th>
+                                    <th><span> 지역</span></th>
+                                    <th><span> IP 차단</span></th>
+                                    <th><span> 상세보기</span></th>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <td> <span class="ml-16"> 172.13.10.*</span></td>
+                                    <td> <span class="ml-16"> 1328(70%)</span></td>
+                                    <td class="text-center"> <span> 수원시 영동구</span></td>
+                                    <td class="text-center"> <button class="ip-button">IP 차단</button> </td>
+                                    <td class="text-center"> <button class="detail-button">상세보기</button> </td>
+                                </tr>
+                                <tr>
+                                    <td> <span class="ml-16"> 20.20.20.**</span></td>
+                                    <td> <span class="ml-16"> 130(14%)</span></td>
+                                    <td class="text-center"> <span> 서울시 금천구</span></td>
+                                    <td class="text-center"> <button class="ip-button">IP 차단</button> </td>
+                                    <td class="text-center"> <button class="detail-button">상세보기</button> </td>
+                                </tr>
+                                <tr>
+                                    <td> <span class="ml-16"> 183.101.208</span></td>
+                                    <td> <span class="ml-16"> 48(12%)</span></td>
+                                    <td class="text-center"> <span> 베이징</span></td>
+                                    <td class="text-center"> <button class="ip-button">IP 차단</button> </td>
+                                    <td class="text-center"> <button class="detail-button">상세보기</button> </td>
+                                </tr>
+                                <tr>
+                                    <td> <span class="ml-16"> 127.0.0.*</span> </td>
+                                    <td> <span class="ml-16"> 12(4%)</span> </td>
+                                    <td class="text-center"> <span> 서울시 구로구</span> </td>
+                                    <td class="text-center"> <button class="ip-button">IP 차단</button> </td>
+                                    <td class="text-center"> <button class="detail-button">상세보기</button> </td>
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div>
+                    <div class="invoke-table-wrap invoke-chart-user">
+                        <table class="invoke-chart">
+                            <caption class="hidden">호출건수 / 사용자수</caption>
+                            <colgroup>
+                            <col width="20%">
+                            <col width="20%">
+                            <col width="%">
+                            <col width="15%">
+                            </colgroup>
+
+                            <thead>
+                                <tr>
+                                    <th> <span> IP</span></th>
+                                    <th> <span> 접근 횟수</span></th>
+                                    <th> <span> 타 서비스 접근기록</span></th>
+                                    <th> <span> IP 차단</span></th>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <td> <span class="ml-16"> 172.16.10.101</span> </td>
+                                    <td> <span class="ml-16"> 1328(70%)</span> </td>
+                                    <td class="text-center"> <span> 자유토크(200번) / 보건소홈 (100번)</span> </td>
+                                    <td class="text-center"> <button class="ip-button">IP 차단</button> </td>
+                                </tr>
+                                <tr>
+                                    <td> <span class="ml-16"> 172.16.10.102</span></td>
+                                    <td> <span class="ml-16"> 130(14%)</span></td>
+                                    <td class="text-center"> <span> -</span></td>
+                                    <td class="text-center"> <button class="ip-button">IP 차단</button> </td>
+                                </tr>
+                                <tr>
+                                    <td> <span class="ml-16"> 172.16.10.104 </span></td>
+                                    <td> <span class="ml-16"> 48(12%) </span></td>
+                                    <td class="text-center"> <span >  - </span></td>
+                                    <td class="text-center"> <button class="ip-button">IP 차단</button> </td>
+                                </tr>
+                                <tr>
+                                    <td> <span class="ml-16"> 172.16.10.107</span></td>
+                                    <td> <span class="ml-16"> 12(4%)</span></td>
+                                    <td class="text-center"> <span> -</span></td>
+                                    <td class="text-center"> <button class="ip-button">IP 차단</button> </td>
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div>
+                    
+                </div>
+            </div>
+        </div>
+    </section>
+    
+    <script src="script/dropdown.js"></script>
+    <script src="script/clickchart.js"></script>
+    <script src="script/tabmenu.js"></script>
+</body>
+</html>
