@@ -629,11 +629,12 @@ th {
 }
 
 .display{
-    transform: translateY(-100%);
+    /* transform: translateY(-100%);
     visibility: hidden;
     overflow: hidden;
     height: 100%;
-    visibility: collapse;
+    visibility: collapse; */
+    display: none;
 }
 
 .query-detail{
