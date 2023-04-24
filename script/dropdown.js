@@ -2,6 +2,7 @@ button();
 function button(params) {  
     const $dropdownButton = document.getElementsByClassName('dropdown-button');
     const $submenuWrap = document.getElementsByClassName('submenu-wrap');
+    const $tabMenu = document.getElementsByClassName('tab-menu');
     
     for (let i = 0; i < $dropdownButton.length; i++) {
         
@@ -11,11 +12,16 @@ function button(params) {
                 $dropdownButton[i].classList.remove('dropdown-icon-down');
                 $dropdownButton[i].classList.add('dropdown-icon-up');
                 $submenuWrap[i].classList.add('display')
+                $tabMenu[i].classList.add('tab-menu-display')
             }
             else{
                 $dropdownButton[i].classList.add('dropdown-icon-down');
                 $dropdownButton[i].classList.remove('dropdown-icon-up');
                 $submenuWrap[i].classList.remove('display')
+                $tabMenu[i].classList.add('tab-menu-display')
+                setTimeout(function() {
+                    $tabMenu[i].classList.remove('tab-menu-display')
+                }, 100)
             }
             // i번째 이외의 다른 버튼을 눌렀을 때, 버튼 모양을 바꿔주는 이벤트
             for (let j = 0; j < $dropdownButton.length; j++) {
