@@ -178,14 +178,6 @@
                         <div class="adjust-list">
                             <table class="query-adjust-list-table">
                                 <caption class="hidden"> 쿼리 수정목록 </caption>
-                                <!-- <colgroup>
-                                    <col width="10%">
-                                    <col width="10%">
-                                    <col width="">
-                                    <col width="10%">
-                                    <col width="15%">
-                                    <col width="15%">
-                                </colgroup> -->
                                 <thead class="query-adjust-list-thead">
                                     <tr>
                                         <th style="width: 5%"></th>
@@ -206,6 +198,7 @@
                                         <td class="text-center" style="width: 20%; "><span class="average-time">1.55ms ( <div class="updown-icon up-icon"></div>+0.32ms )</span></td>
                                         <td class="text-center" style="width: 20%; "><span class="condition">진행완료</span></td>
                                     </tr>
+                                    <!-- subMenu -->
                                     <tr class="accordion-body submenu-wrap display drop-menu3">
                                         <td class="tab-menu tab-menu-display">
                                             <div class="tab-header">
@@ -270,6 +263,7 @@
                                             </ul>
                                         </td>
                                     </tr>
+                                    <!-- //subMenu -->
                                     <tr>
                                         <td class="text-center" style="width: 5%"><div class="dropdown-button dropdown-button1 dropdown-icon-down"></div></td>
                                         <td class="text-center" style="width: 5%"> <span class="blue target"> A</span> </td>
@@ -278,7 +272,8 @@
                                         <td class="text-center" style="width: 20%"><span class="average-time">1.55ms ( <div class="updown-icon up-icon"></div>+0.32ms )</span></td>
                                         <td class="text-center" style="width: 20%"><span class="condition" stlye="width: 15%">진행완료</span></td>
                                     </tr>
-                                    <tr class="submenu-wrap display drop-menu3">
+                                    <!-- subMenu -->
+                                    <tr class="accordion-body submenu-wrap display drop-menu3">
                                         <td class="tab-menu tab-menu-display">
                                             <div class="tab-header">
                                                 <button class="tab-btn active">상세정보</button>
@@ -342,6 +337,7 @@
                                             </ul>
                                         </td>
                                     </tr>
+                                    <!-- //subMenu -->
                                     <tr>
                                         <td class="text-center" style="width: 5%"><div class="dropdown-button dropdown-button2 dropdown-icon-down"></div></td>
                                         <td class="text-center" style="width: 5%"> <span class="green target"> B</span> </td>
@@ -350,6 +346,155 @@
                                         <td class="text-center" stlye="width: 20%"><span class="average-time">0.41ms ( <div class="updown-icon down-icon"></div>-0.11ms )</span></td>
                                         <td class="text-center" style="width: 20%"><span class="condition">진행완료</span></td>
                                     </tr>
+                                    <!-- subMenu -->
+                                    <tr class="accordion-body submenu-wrap display drop-menu3">
+                                        <td class="tab-menu tab-menu-display">
+                                            <div class="tab-header">
+                                                <button class="tab-btn active">상세정보</button>
+                                                <button class="tab-btn">Table Row 영향도</button>                                                       
+                                            </div>
+                                            <div class="tab-display">
+                                            <ul class="tab-wrap">
+                                                <li class="tab-content active">
+                                                    <div class="table-head">
+                                                        <ul class="table-head-wrap">
+                                                            <li class="text-center detail-query-title"><span>Query 상세보기</span> </li>
+                                                            <li class="text-center detail-text-wrap">
+                                                                <span>바인딩 컬럼</span>
+                                                                <span>파라미터</span>
+                                                                <span>타입</span>
+                                                            </li>
+                                                        </ul>
+                                                    </div>
+                                                    <div class="table-body">
+                                                        <div class="table-body-content">
+                                                            <div class="detail-query text-center">
+                                                                <span>
+                                                                    SELECT* <br>
+                                                                    FROMTN_BBS <br>
+                                                                    WHERE BBS_A=?BBS_F=? <br>
+                                                                    SELECT* <br>
+                                                                    FROMTN_BBS <br>
+                                                                    WHERE BBS_A=?BBS_F=? <br>
+                                                                    SELECT* <br>
+                                                                    FROMTN_BBS <br>
+                                                                    WHERE BBS_A=?BBS_F=? <br>
+                                                                </span>
+                                                            </div>
+                                                            <div class="table-body-contents-wrap">
+                                                                <div class="table-contents">
+                                                                    <div class="text-center">
+                                                                        <span>BBS_A</span>
+                                                                    </div>
+                                                                    <div class="text-center">
+                                                                        <span>2314</span>
+                                                                    </div>
+                                                                    <div class="text-center">
+                                                                        <span>int</span>
+                                                                    </div>
+                                                                </div>
+                                                                <div class="table-contents">
+                                                                    <div class="text-center">
+                                                                        <span>BBS_A</span>
+                                                                    </div>
+                                                                    <div class="text-center">
+                                                                        <span>2314</span>
+                                                                    </div>
+                                                                    <div class="text-center">
+                                                                        <span>int</span>
+                                                                    </div>
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </li>
+                                            </ul>
+                                        </td>
+                                    </tr>
+                                    <!-- //subMenu -->
+                                    <tr>
+                                        <td class="text-center" style="width : 5%"><div class="dropdown-button dropdown-button3 dropdown-icon-down"></div></td>
+                                        <td class="text-center" style="width : 5%"> <span class="orange target"> C</span> </td>
+                                        <td> <span class="query">SELECT*FROM TN_BBSWHERE BBS_A?...</span></td>
+                                        <td class="text-center" style="width: 15%"><span class="speed red-text">11.03ms</span></td>
+                                        <td class="text-center" style="width: 20%"><span class="average-time">10.02ms ( <div class="updown-icon down-icon"></div>-1.01ms )</span></td>
+                                        <td class="text-center" style="width: 20%"><span class="condition red-text">진행중</span></td>
+                                    </tr>
+                                    <!-- subMenu -->
+                                    <tr class="accordion-body submenu-wrap display drop-menu3">
+                                        <td class="tab-menu tab-menu-display">
+                                            <div class="tab-header">
+                                                <button class="tab-btn active">상세정보</button>
+                                                <button class="tab-btn">Table Row 영향도</button>                                                       
+                                            </div>
+                                            <div class="tab-display">
+                                            <ul class="tab-wrap">
+                                                <li class="tab-content active">
+                                                    <div class="table-head">
+                                                        <ul class="table-head-wrap">
+                                                            <li class="text-center detail-query-title"><span>Query 상세보기</span> </li>
+                                                            <li class="text-center detail-text-wrap">
+                                                                <span>바인딩 컬럼</span>
+                                                                <span>파라미터</span>
+                                                                <span>타입</span>
+                                                            </li>
+                                                        </ul>
+                                                    </div>
+                                                    <div class="table-body">
+                                                        <div class="table-body-content">
+                                                            <div class="detail-query text-center">
+                                                                <span>
+                                                                    SELECT* <br>
+                                                                    FROMTN_BBS <br>
+                                                                    WHERE BBS_A=?BBS_F=? <br>
+                                                                    SELECT* <br>
+                                                                    FROMTN_BBS <br>
+                                                                    WHERE BBS_A=?BBS_F=? <br>
+                                                                    SELECT* <br>
+                                                                    FROMTN_BBS <br>
+                                                                    WHERE BBS_A=?BBS_F=? <br>
+                                                                </span>
+                                                            </div>
+                                                            <div class="table-body-contents-wrap">
+                                                                <div class="table-contents">
+                                                                    <div class="text-center">
+                                                                        <span>BBS_A</span>
+                                                                    </div>
+                                                                    <div class="text-center">
+                                                                        <span>2314</span>
+                                                                    </div>
+                                                                    <div class="text-center">
+                                                                        <span>int</span>
+                                                                    </div>
+                                                                </div>
+                                                                <div class="table-contents">
+                                                                    <div class="text-center">
+                                                                        <span>BBS_A</span>
+                                                                    </div>
+                                                                    <div class="text-center">
+                                                                        <span>2314</span>
+                                                                    </div>
+                                                                    <div class="text-center">
+                                                                        <span>int</span>
+                                                                    </div>
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </li>
+                                            </ul>
+                                        </td>
+                                    </tr>
+                                    <!-- //subMenu -->
+                                    <tr>
+                                        <td class="text-center" style="width: 5%;"><div class="dropdown-button dropdown-button4 dropdown-icon-down"></div></td>
+                                        <td class="text-center" style="width: 5%;"> <span class="yello target"> D</span> </td>
+                                        <td> <span class="query">SELECT*FROM TN_BBSWHERE BBS_A?...</span></td>
+                                        <td class="text-center" style="width : 15%"><span class="speed red-text">0.00ms</span></td>
+                                        <td class="text-center" style="width : 20%"><span class="average-time">15.03ms ( <div class="updown-icon up-icon"></div>+1.01ms )</span></td>
+                                        <td class="text-center" style="width : 20%"><span class="condition red-text">진행중</span></td>
+                                    </tr>
+                                    <!-- subMenu -->
                                     <tr class="submenu-wrap display drop-menu3">
                                         <td class="tab-menu tab-menu-display">
                                             <div class="tab-header">
@@ -414,23 +559,7 @@
                                             </ul>
                                         </td>
                                     </tr>
-                                    <tr>
-                                        <td class="text-center" style="width : 5%"><div class="dropdown-button dropdown-button3 dropdown-icon-down"></div></td>
-                                        <td class="text-center" style="width : 5%"> <span class="orange target"> C</span> </td>
-                                        <td> <span class="query">SELECT*FROM TN_BBSWHERE BBS_A?...</span></td>
-                                        <td class="text-center" style="width: 15%"><span class="speed red-text">11.03ms</span></td>
-                                        <td class="text-center" style="width: 20%"><span class="average-time">10.02ms ( <div class="updown-icon down-icon"></div>-1.01ms )</span></td>
-                                        <td class="text-center" style="width: 20%"><span class="condition red-text">진행중</span></td>
-                                    </tr>
-                                    
-                                    <tr>
-                                        <td class="text-center" style="width: 5%;"><div class="dropdown-button dropdown-button4 dropdown-icon-down"></div></td>
-                                        <td class="text-center" style="width: 5%;"> <span class="yello target"> D</span> </td>
-                                        <td> <span class="query">SELECT*FROM TN_BBSWHERE BBS_A?...</span></td>
-                                        <td class="text-center" style="width : 15%"><span class="speed red-text">0.00ms</span></td>
-                                        <td class="text-center" style="width : 20%"><span class="average-time">15.03ms ( <div class="updown-icon up-icon"></div>+1.01ms )</span></td>
-                                        <td class="text-center" style="width : 20%"><span class="condition red-text">진행중</span></td>
-                                    </tr>
+                                    <!-- //subMenu -->
                                 </tbody>
                                  <!-- table 내용// -->
                             </table>
