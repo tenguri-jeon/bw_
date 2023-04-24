@@ -1,8 +1,7 @@
-// button();
-// function button(params) {  
+button();
+function button(params) {  
     const $dropdownButton = document.getElementsByClassName('dropdown-button');
     const $submenuWrap = document.getElementsByClassName('submenu-wrap');
-    const $queryAdjustListtbody = document.getElementsByClassName('query-adjust-list-tbody')
     
     for (let i = 0; i < $dropdownButton.length; i++) {
         
@@ -11,14 +10,12 @@
             if ($dropdownButton[i].classList.contains('dropdown-icon-down')) {
                 $dropdownButton[i].classList.remove('dropdown-icon-down');
                 $dropdownButton[i].classList.add('dropdown-icon-up');
-                // $submenuWrap[i].classList.add('display')
-                $submenuWrap[i].style.display = 'none'
+                $submenuWrap[i].classList.add('display')
             }
             else{
                 $dropdownButton[i].classList.add('dropdown-icon-down');
                 $dropdownButton[i].classList.remove('dropdown-icon-up');
-                $submenuWrap[i].style.display = 'table'
-                // $submenuWrap[i].classList.remove('display')
+                $submenuWrap[i].classList.remove('display')
             }
             // i번째 이외의 다른 버튼을 눌렀을 때, 버튼 모양을 바꿔주는 이벤트
             for (let j = 0; j < $dropdownButton.length; j++) {
@@ -30,5 +27,5 @@
             }
         })
     }
-// }
+}
 

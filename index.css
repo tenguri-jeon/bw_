@@ -628,13 +628,21 @@ th {
     display: flex;
 }
 
-.display{
-    /* transform: translateY(-100%);
-    visibility: hidden;
-    overflow: hidden;
-    height: 100%;
-    visibility: collapse; */
+.invoke-display{
     display: none;
+}
+
+.display{
+    height: 0px;
+    overflow: hidden;
+}
+
+.display .tab-menu{
+    display: none;
+}
+
+.tab-menu{
+    height: 230px;
 }
 
 .query-detail{
@@ -673,6 +681,9 @@ th {
 .invoke-modal-content{
     padding: 16px;
     opacity: 90%;
+    overflow: hidden;
+    transition: 0.5s;
+    height: 1020px;
 }
 
 .invoke-tittle-wrap span{
@@ -711,9 +722,19 @@ th {
     width: 100%;
 }
 
+.invoke-height{
+    height: 754px;
+}
+
 .invoke-table-wrap{
     width: 100%;
     margin: 0 auto;
+}
+
+.invoke-close-button-wrap{
+    display: flex;
+    justify-content: flex-end;
+    margin-bottom: 16px;
 }
 
 .invoke-chart tbody span{
