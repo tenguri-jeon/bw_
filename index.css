@@ -476,19 +476,18 @@
     color: var(--blue-color);
 }
 
-.query-adjust-list-tbody tr:nth-child(odd){
+.first-table-back{
     background-color: var(--table-first-back);
     color: var(--table-blue);
     border-radius: 2px;
     height: 38px;
 }
 
-.query-adjust-list-tbody tr:nth-child(even){
+.second-table-back{
     background-color: var(--table-second-back);
     color: var(--table-blue);
     border-radius: 2px;
 }
-
 
 .dropdown-button{
     width: 24px;

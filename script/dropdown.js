@@ -18,7 +18,7 @@ function accordion(params) {
                 setTimeout(function() {
                     $tabMenu[i].classList.remove('tab-menu-display')
                 }, 200)
-                $tableBody[0].style.height = '378px';
+                $tableBody[0].style.height = '330px';
             }
             // 다시 올리는 버튼 이벤트
             else{
@@ -27,7 +27,7 @@ function accordion(params) {
                 $submenuWrap[i].classList.add('display')
                 $tabMenu[i].classList.add('tab-menu-display')
                 $tabMenu[i].classList.add('tab-menu-display')
-                $tableBody[0].style.height = '178px';
+                $tableBody[0].style.height = '165px';
             }
             // i번째 이외의 다른 버튼을 눌렀을 때, 버튼 모양을 바꿔주는 이벤트
             for (let j = 0; j < $dropdownButton.length; j++) {
