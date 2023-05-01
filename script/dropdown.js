@@ -18,7 +18,7 @@ function accordion(params) {
                 setTimeout(function() {
                     $tabMenu[i].classList.remove('tab-menu-display')
                 }, 200)
-                $tableBody[0].style.height = '330px';
+                $tableBody[0].style.height = '404px';
             }
             // 다시 올리는 버튼 이벤트
             else{
